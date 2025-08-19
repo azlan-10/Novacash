@@ -20,7 +20,7 @@ const handletransfer = async () => {
   setLoading(true);
   try {
     const res = await axios.post(
-      'http://localhost:3000/api/v1/account/transfer',
+      'https://api-nova-cash.onrender.com/api/v1/account/transfer',
       { to: id, amount: numericAmount },
       { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
     );

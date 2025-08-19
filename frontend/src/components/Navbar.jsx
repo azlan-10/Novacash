@@ -7,7 +7,7 @@ export default function Navbar() {
 
 const handledemosignin = async () => {
   try {
-    const response = await axios.post("http://localhost:3000/api/v1/user/demo");
+    const response = await axios.post("https://api-nova-cash.onrender.com/api/v1/user/demo");
     const token = response.data.token;
     localStorage.setItem("token" , token)
      localStorage.setItem("senderName", response.data.firstname);

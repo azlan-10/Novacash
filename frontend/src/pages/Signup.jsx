@@ -15,7 +15,7 @@ export default function Signup() {
 
   const handleSignup = async () => {
     try {
-      const response = await axios.post("http://localhost:3000/api/v1/user/signup", {
+      const response = await axios.post("https://api-nova-cash.onrender.com/api/v1/user/signup", {
         username,
         firstname,
         lastname,

@@ -13,7 +13,7 @@ export default function Appbar() {
 
 
     const getbalance = async () => {
-  const res = await axios.get("http://localhost:3000/api/v1/account/balance",{
+  const res = await axios.get("https://api-nova-cash.onrender.com/api/v1/account/balance",{
       headers: {
                         Authorization: `Bearer ${localStorage.getItem("token")}`
                     }
